@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'mohzimshaikh/maven-abhishek-docker-agent:v4'
+      image 'maven:3.9.9-ibm-semeru-21-jammy'
       args '--user jenkins -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
